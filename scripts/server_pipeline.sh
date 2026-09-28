@@ -26,8 +26,14 @@ if [ ! -f "$DEAL_II_DIR/lib/cmake/deal.II/deal.IIConfig.cmake" ]; then
   if [ -f "$HOME/opt/dealii-9.7.1-minimal.tar.xz" ] && xz -t "$HOME/opt/dealii-9.7.1-minimal.tar.xz"; then
     tar -xJf "$HOME/opt/dealii-9.7.1-minimal.tar.xz" -C "$HOME/opt/dealii-9.7.1-source"
   else
-    curl --fail --location --retry 5 --connect-timeout 30 https://codeload.github.com/dealii/dealii/tar.gz/refs/tags/v9.7.1 -o "$HOME/opt/dealii-9.7.1-github.tar.gz"
-    tar -xzf "$HOME/opt/dealii-9.7.1-github.tar.gz" --strip-components=1 -C "$HOME/opt/dealii-9.7.1-source"
+    archive="$HOME/opt/dealii-9.7.1-upstream.tar.gz"
+    if ! gzip -t "$archive" 2>/dev/null; then
+      archive="$HOME/opt/dealii-9.7.1-github.tar.gz"
+      if ! gzip -t "$archive" 2>/dev/null; then
+        curl --fail --location --retry 5 --connect-timeout 30 --speed-limit 100 --speed-time 60 https://codeload.github.com/dealii/dealii/tar.gz/refs/tags/v9.7.1 -o "$archive"
+      fi
+    fi
+    tar -xzf "$archive" --strip-components=1 -C "$HOME/opt/dealii-9.7.1-source"
   fi
   cmake -G Ninja -S "$HOME/opt/dealii-9.7.1-source" -B "$HOME/opt/dealii-9.7.1-build" \
     -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$DEAL_II_DIR" \
