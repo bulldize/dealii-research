@@ -1,0 +1,3 @@
+# Preserve scientific output exactly as written by deal.II and Matplotlib.
+*.vtu -whitespace
+*.svg -whitespace

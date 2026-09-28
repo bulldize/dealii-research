@@ -1,0 +1,16 @@
+{
+  "base_h": 0.4,
+  "levels": 2,
+  "vertices": 617,
+  "cells": 1052,
+  "cells_after_each_pass": [
+    915,
+    999,
+    1052
+  ],
+  "area": 60.0,
+  "gmsh_algorithm": 6,
+  "refinement": "longest edge bisection plus conforming red closure; barycenter distance marking",
+  "original_fenics_mesh_available": false,
+  "mesh_sha256": "fbfb629a051d5058ff5bc4c05b8a23ab101ec1f550d8fc55fcf7bd33b213de7e"
+}

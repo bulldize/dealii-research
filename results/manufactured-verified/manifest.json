@@ -1,0 +1,22 @@
+{
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)",
+  "dealii": "9.7.1",
+  "build": "Release",
+  "paper": "arXiv:2512.22831v1",
+  "paper_sha256": "3c30a5d0998e674e12d8586e19d817d95f79d4395ffec2422fa0ec6479644bdb",
+  "configuration": "configs/manufactured.prm",
+  "source_sha256": {
+    "include/research/fields.h": "97de67e7c643ee402c42f521292b1e4897a207a81a60b6fab82d31086b68b9e8",
+    "include/research/forms.h": "275ff1750a03c165caa93d3020d0ff591e70283d819f5eaec018eb3c68dbfff1",
+    "include/research/giesekus.h": "f16243b0f4b15ac4492eab7ac37e950fdc7272a477a98849877626fdcc714641",
+    "include/research/manufactured.h": "371918b8d0e4f9c4a292a692fa0460b7b8b94988d51bcc9505c956c41c12e3d0",
+    "include/research/solver.h": "727edaaff66e3bf4e41be637da7829486d68864b69dbdb68a8f36f6e7bd8ee6e",
+    "src/solver.cc": "a8a63afdff7fb25ac525a8098432e2e9a0154523c8d04b2911743ab5077420b7",
+    "apps/giesekus.cc": "da28819e71a79043fa0205d4f2029adffe6b3ddda0550fe08a677472091d0afc",
+    "tests/kernels.cc": "21ee52f183dbabe181ab0b7e3b436a062cd717c2d57f250fe5b7a0cbe57bbd9d",
+    "configs/manufactured.prm": "c40b4764223ec1a97c7954eda73004e731eae9e87351a1d61473da957fb950ce",
+    "CMakeLists.txt": "359ab5d787688d99039d36cf1463dade5f59dff8f5bbeecd34fdf389ab0ec1ea"
+  },
+  "executable_sha256": "a3a3e447529cc05683bfc4a8b996e58a03a1693d43ecdc95edd5f088d4dac14d"
+}

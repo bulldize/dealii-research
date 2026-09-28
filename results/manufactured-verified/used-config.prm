@@ -1,0 +1,11 @@
+# Paper Section 5.2: single experiment, no parameter scan.
+# 16 subdivisions = 17 x 17 vertices; h_cell = sqrt(2)/16.
+set subdivisions = 16
+set dt = 0.005
+set end_time = 0.1
+set rho = 1
+set nu = 1
+set mu = 1
+set lambda = 1
+set newton_tolerance = 1e-12
+set max_newton = 15

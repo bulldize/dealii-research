@@ -1,0 +1,11 @@
+# Generated from arXiv:2512.22831v1, Section 5
+set problem = manufactured
+set subdivisions = 31
+set dt = 0.0003125
+set end_time = 0.1
+set rho = 1
+set nu = 1
+set mu = 1
+set lambda = 1
+set newton_tolerance = 1e-12
+set max_newton = 15

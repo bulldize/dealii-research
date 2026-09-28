@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "all_diagnostics_finite": true,
+  "newton_increment": true,
+  "equation_residual": true,
+  "weak_incompressibility": true,
+  "forced_energy_identity": true,
+  "positive_determinant_at_quadrature_points": true
+}

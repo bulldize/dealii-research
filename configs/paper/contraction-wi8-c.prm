@@ -1,0 +1,12 @@
+# Generated from arXiv:2512.22831v1, Section 5
+set problem = contraction
+set mesh_file = meshes/contraction-paper.msh
+set dt = 0.01
+set end_time = 10
+set rho = 0.5555555555555556
+set nu = 1.1111111111111112
+set mu = 1
+set lambda = 10
+set diffusion = 0.0001
+set newton_tolerance = 1e-12
+set max_newton = 15
