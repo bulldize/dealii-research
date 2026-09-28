@@ -1,10 +1,10 @@
 # 完整论文任务与服务器性能配置
 
-任务清单在 `configs/paper/manifest.json`：42 个制造解收敛实验和 24 个收缩流实验。部署目标为 karen@10.6.214.78 的 WSL，仓库位置 `/home/karen/dealii-research`。
+任务清单在 `configs/paper/manifest.json`：42 个制造解收敛实验和 24 个收缩流实验。部署目标为 karen@10.6.214.78 的 WSL，仓库位置 `/home/karen/src/dealii-research`。
 
 ## 部署状态
 
-截至 2026-09-29，服务器登录曾成功，但传输多次断开；完整软件和依赖尚未确认部署成功，正式队列尚未启动。下面描述已准备的工作流，不代表已经取得测量或全部实验结果。
+2026-09-29 已确认服务器克隆至上述目录，提交为 3c2227f。后台工作流已启动（初始 PID 1572），OpenBLAS 已就绪；当前下载完整 deal.II 源码。尚未确认编译、性能测量或正式数值队列成功，后续状态以服务器 phase.txt 和日志为准。旧的 /home/karen/dealii-research 目录保留。
 
 ## 性能策略
 
